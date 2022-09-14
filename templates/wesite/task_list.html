@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+    <h1>to do list</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+        </tr>
+        {% for task in object_list %}
+         <tr>
+            <td>{{ task.tittle }}</td>
+         </tr>
+            {% empty %}
+            <h3>no items in list</h3>
+        {% endfor %}
+    </table>
+</head>
+<body>
+
+</body>
+</html>
